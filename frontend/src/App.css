@@ -1,0 +1,64 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f8fafc;
+}
+.about-container,
+.about-hero,
+.features-grid,
+.hero-section,
+.products-grid {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+.app-layout, .store-layout {
+  display: flex !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.sidebar {
+  width: 250px !important;
+  min-width: 250px !important;
+  max-width: 250px !important;
+  height: 100vh !important;
+  position: sticky !important;
+  top: 0 !important;
+  flex-shrink: 0 !important;
+  z-index: 1000;
+}
+.main-content {
+  flex: 1 !important;
+  width: calc(100% - 250px) !important;
+  min-height: 100vh !important;
+  background-color: #f8fafc !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important; 
+  padding: 40px !important;
+  margin: 0 !important;
+}
+.main-content > *, 
+.products-page, 
+.cart-page, 
+.contact, 
+.orders-page, 
+.about {
+  width: 100% !important;
+  max-width: 1200px !important; 
+  margin: 0 auto !important;    
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.footer, footer {
+  width: 100% !important;
+  margin-top: auto !important;
+}

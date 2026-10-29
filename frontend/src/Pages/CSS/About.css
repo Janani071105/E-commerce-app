@@ -1,0 +1,130 @@
+.about {
+  width: 100%;
+  max-width: 1200px;     
+  margin: 0 auto;        
+  min-height: 85vh;
+  background-color: #f8f9fc;
+  color: #1a1a1a;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    
+  gap: 50px;
+}
+.about-hero {
+  text-align: center;    
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;       
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.about-tag {
+  color: #130352;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.about-hero h1 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111111;
+  margin: 0;
+}
+.about-hero p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+.about-stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background: #ffffff;
+  padding: 35px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  box-sizing: border-box;
+}
+.stat-card {
+  text-align: center;
+}
+.stat-card h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #130352;
+  margin: 0 0 5px 0;
+}
+.stat-card p {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 600;
+  margin: 0;
+}
+.about-values {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.about-values h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+.values-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.value-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 15px;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+.value-card:hover {
+  transform: translateY(-5px);
+}
+.value-card i {
+  font-size: 32px;
+  color: #130352;
+}
+.value-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #111111;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
